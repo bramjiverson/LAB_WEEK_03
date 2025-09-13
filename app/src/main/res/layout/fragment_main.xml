@@ -1,13 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainFragment">
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/coffeeList">
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="center"
-        android:text="@string/hello_blank_fragment" />
-</FrameLayout>
+    <!-- Fragment List -->
+    <fragment
+        android:id="@+id/coffeeList"
+        android:name="com.example.lab_week_03.ListFragment"
+        android:label="List">
+        <action
+            android:id="@+id/coffee_id_action"
+            app:destination="@id/coffeeDetail" />
+    </fragment>
+
+    <!-- Fragment Detail -->
+    <fragment
+        android:id="@+id/coffeeDetail"
+        android:name="com.example.lab_week_03.DetailFragment"
+        android:label="Detail">
+        <action
+            android:id="@+id/action_detailFragment_to_listFragment"
+            app:destination="@id/coffeeList"/>
+    </fragment>
+
+</navigation>

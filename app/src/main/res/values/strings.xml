@@ -1,24 +1,18 @@
-<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">CoffeeApp</string>
-
-    <!-- general -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="app_name">LAB_WEEK_03</string>
     <string name="coffee_list">Coffee List</string>
-    <string name="title_list">Daftar Kopi</string>
-    <string name="title_detail">Detail Kopi</string>
 
-    <!-- items: titles -->
+    <!-- Titles -->
     <string name="affogato_title">Affogato</string>
     <string name="americano_title">Americano</string>
     <string name="latte_title">Latte</string>
+    <string name="cappuccino_title">Cappuccino</string>
+    <string name="mocha_title">Mocha</string>
 
-    <!-- items: descriptions -->
-    <string name="affogato_desc">Espresso panas yang dituangkan di atas es krim vanilla.</string>
-    <string name="americano_desc">Espresso yang ditambahkan air panas, rasanya lebih ringan.</string>
-    <string name="latte_desc">Espresso dicampur susu panas dengan lapisan busa tipis.</string>
-
-    <!-- fallback / unknown -->
-    <string name="coffee_unknown_title">Unknown Coffee</string>
-    <string name="coffee_unknown_desc">Deskripsi tidak tersedia.</string>
+    <!-- Descriptions -->
+    <string name="affogato_desc">Affogato is espresso poured over ice cream.</string>
+    <string name="americano_desc">Americano is espresso diluted with hot water.</string>
+    <string name="latte_desc">Latte is espresso with steamed milk.</string>
+    <string name="cappuccino_desc">Cappuccino is espresso with milk foam.</string>
+    <string name="mocha_desc">Mocha is chocolate-flavored coffee.</string>
 </resources>
